@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Spinner } from './spinner';
+import { Upload } from './upload.component';
 
-describe('Spinner', () => {
-  let component: Spinner;
-  let fixture: ComponentFixture<Spinner>;
+describe('Upload', () => {
+  let component: Upload;
+  let fixture: ComponentFixture<Upload>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [Spinner]
+      imports: [Upload]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(Spinner);
+    fixture = TestBed.createComponent(Upload);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

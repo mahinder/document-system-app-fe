@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Qna } from './qna';
+import { Register } from './register.component';
 
-describe('Qna', () => {
-  let component: Qna;
-  let fixture: ComponentFixture<Qna>;
+describe('Register', () => {
+  let component: Register;
+  let fixture: ComponentFixture<Register>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [Qna]
+      imports: [Register]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(Qna);
+    fixture = TestBed.createComponent(Register);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
