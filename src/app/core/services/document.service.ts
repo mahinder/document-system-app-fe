@@ -2,7 +2,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpEventType, HttpProgressEvent } from '@angular/common/http';
 import { Observable, map, catchError, throwError } from 'rxjs';
-import { environment } from '../../../environments/environment';
+import { environment } from '../../../../environments/environment';
 import { SecurityService } from './security.service';
 
 export interface Document {

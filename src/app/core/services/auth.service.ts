@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { BehaviorSubject, Observable, map, tap, catchError, throwError } from 'rxjs';
 import { Router } from '@angular/router';
-import { environment } from '../../../environments/environment';
+import { environment } from '../../../../environments/environment';
 
 export interface LoginCredentials {
   email: string;
