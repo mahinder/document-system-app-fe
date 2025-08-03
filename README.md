@@ -452,23 +452,10 @@ DELETE /api/users/:id    # Delete user
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🆘 Support
-
-### Documentation
-- [API Documentation](docs/api.md)
-- [Deployment Guide](docs/deployment.md)
-- [Security Guidelines](docs/security.md)
-- [Performance Guide](docs/performance.md)
-
-### Getting Help
-- **GitHub Issues**: Bug reports and feature requests
-- **Discussions**: Questions and community support
-- **Wiki**: Detailed documentation and guides
 
 ### Contact
-- **Email**: support@yourcompany.com
+- **Email**: mahinder124@gmail.com
 - **Slack**: #qa-document-system
-- **Documentation**: [Wiki](https://github.com/your-org/qa-document-system/wiki)
 
 ## 🏆 Achievements
 
