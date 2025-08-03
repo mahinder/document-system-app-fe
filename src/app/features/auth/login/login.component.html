@@ -1,1 +1,79 @@
-<p>login works!</p>
+<!-- <button (click)="loginWithGoogle()">Login with Google</button> -->
+
+<div class="login-container">
+  <mat-card class="login-card">
+    <mat-card-content>
+      <!-- Header with Logo -->
+      <div class="header">
+        <img
+          src="https://images.unsplash.com/photo-1496200186974-4293800e2c20?w=800&auto=format&fit=crop&q=80"
+          alt="Blog Logo"
+          class="logo"
+        />
+        <h1>Welcome Back</h1>
+        <p class="subtitle">Sign in to access your account</p>
+      </div>
+      <!-- Login Form -->
+      <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <!-- Email Input -->
+        <mat-form-field class="input-field">
+          <input
+            matInput
+            placeholder="Email"
+            formControlName="email"
+            required
+          />
+          <mat-error *ngIf="loginForm.get('email').errors?.required">
+            Email is required
+          </mat-error>
+          <mat-error *ngIf="loginForm.get('email').errors?.email">
+            Please enter a valid email
+          </mat-error>
+        </mat-form-field>
+        <!-- Password Input -->
+        <mat-form-field class="input-field">
+          <input
+            matInput
+            type="password"
+            placeholder="Password"
+            formControlName="password"
+            required
+          />
+          <mat-error *ngIf="loginForm.get('password').errors?.required">
+            Password is required
+          </mat-error>
+          <mat-error *ngIf="loginForm.get('password').errors?.minlength">
+            Password must be at least 6 characters
+          </mat-error>
+        </mat-form-field>
+        <!-- Submit Button -->
+        <button
+          mat-raised-button
+          color="primary"
+          type="submit"
+          [disabled]="loginForm.invalid"
+        >
+          Sign In
+        </button>
+      </form>
+      <!-- Social Login Buttons -->
+      <div class="buttons-container">
+        <button
+          mat-flat-button
+          class="social-button google-button"
+          (click)="loginWithGoogle()"
+        >
+          <span>Continue with Google</span>
+        </button>
+      </div>
+
+      <!-- Terms and Privacy -->
+      <p class="terms">
+        By continuing, you agree to our
+        <a href="#">Terms of Service</a>
+        and
+        <a href="#">Privacy Policy</a>
+      </p>
+    </mat-card-content>
+  </mat-card>
+</div>
